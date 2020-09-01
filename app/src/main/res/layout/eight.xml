@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <TextView
+        android:id="@+id/main_heading"
+        android:layout_width="80mm"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:text="Success!"
+        android:textColor="@color/Black"
+        android:textSize="50dp" />
+
+    <TextView
+        android:id="@+id/sub_heading1"
+        android:layout_width="70mm"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_below="@+id/main_heading"
+        android:layout_marginTop="30dp"
+        android:text="We just sent a password reset link to Email Address/ Phone Number.Click
+ on the link to reset your password."
+        android:textColor="@color/Black"
+        android:textSize="30dp" />
+
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sub_heading1"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="58dp"
+
+        android:text="Return" />
+
+
+</RelativeLayout>

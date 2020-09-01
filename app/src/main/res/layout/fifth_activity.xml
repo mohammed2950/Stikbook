@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <TextView
+        android:id="@+id/main_heading"
+        android:layout_width="80mm"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="30dp"
+        android:text="Personal Details"
+        android:textColor="@color/Black"
+        android:textSize="30dp" />
+
+
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/main_heading"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:text="First Name" />
+
+
+    <EditText
+        android:id="@+id/editTextTextLastName"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/editTextTextEmailAddress"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:text="Last Name" />
+
+    <EditText
+        android:id="@+id/editTextTextGender"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/editTextTextLastName"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+
+        android:text="Gender" />
+
+    <EditText
+        android:id="@+id/editTextTextDateofBirth"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/editTextTextLastName"
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+
+        android:text="Date Of Birth" />
+
+
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextTextGender"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="58dp"
+        android:background="@drawable/bg_login"
+        android:text="Continue"
+        android:onClick="goNextPage"
+        />
+
+
+</RelativeLayout>

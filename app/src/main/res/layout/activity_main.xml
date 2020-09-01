@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/main_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="30dp"
+            android:text="Welcome Back!!!"
+            android:textColor="@color/Black"
+            android:textSize="35dp" />
+
+        <TextView
+            android:id="@+id/sub-heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/main_heading"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="30dp"
+            android:text="Log into your account"
+            android:textColor="@color/Black"
+            android:textSize="30dp" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editTextTextEmailAddress"
+                android:layout_width="280dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/main_heading"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/edittext_bg"
+                android:drawableLeft="@drawable/ic_username"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:text="Username" />
+
+
+            <EditText
+                android:id="@+id/editTextTextEmailAddress1"
+                android:layout_width="280dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/editTextTextEmailAddress"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/edittext_bg"
+                android:drawableLeft="@drawable/ic_password"
+                android:drawableRight="@drawable/eye"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:text="Password" />
+
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editTextTextEmailAddress1"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="58dp"
+                android:background="@drawable/bg_login"
+                android:text="Login"
+                android:onClick="goNextPage"
+                />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="   _______________________   OR  _________________________">
+
+            </TextView>
+
+            <ImageButton
+                android:id="@+id/btn_2"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="70dp"
+                android:src="@drawable/google"
+
+                >
+
+            </ImageButton>
+
+        <ImageButton
+            android:id="@+id/btn_1"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/fb"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="70dp"
+            >
+
+        </ImageButton>
+
+            <ImageButton
+                android:id="@+id/btn_3"
+                android:layout_width="120dp"
+                android:src="@drawable/apple"
+                android:layout_height="120dp"
+                android:layout_marginLeft="280dp"
+                android:layout_marginTop="70dp"
+                >
+
+            </ImageButton>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="90dp"
+                android:textAlignment="center"
+                android:layout_marginTop="30dp"
+                android:text="No account? Crate One "
+                android:textColor="@color/Black"
+
+                android:textSize="20dp" />
+        </RelativeLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/headings"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/main_heading"
+        android:layout_height="wrap_content"
+        android:layout_width="110mm"
+
+        android:text="Enter Email Address/Phone"
+        android:textColor="@color/Black"
+        android:textSize="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+
+        />
+
+
+    <TextView
+        android:id="@+id/sub-heading"
+        android:layout_width="110mm"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_heading"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="20dp"
+        android:text=" EMAIL ADDRESS   PHONE NUMBER"
+        android:textColor="@color/Black"
+        android:textSize="20dp" />
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="110mm"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sub-heading"
+        />
+
+    <EditText
+        android:id="@+id/editTextEmailAdress"
+        android:background="@drawable/edittext_bg"
+        android:drawableLeft="@drawable/eamil"
+        android:layout_width="350dp"
+        android:height="45dp"
+        android:layout_marginLeft="20dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_heading"
+        android:layout_marginTop="100dp"
+        android:padding="10dp"
+        android:text="Email" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextEmailAdress"
+        android:background="@drawable/bg_login"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:text="Reset Password"
+        android:onClick="goNextPage"
+        />
+
+
+</RelativeLayout>
+

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/headings"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/main_heading"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Sign Up with
+                        Email Address/Phone Number"
+        android:textColor="@color/Black"
+        android:textSize="30dp"
+        android:layout_marginTop="30dp"
+
+        />
+    <TextView
+        android:id="@+id/sub-heading"
+        android:layout_width="110mm"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_heading"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="20dp"
+        android:text=" EMAIL ADDRESS   PHONE NUMBER"
+        android:textColor="@color/Black"
+        android:textSize="20dp" />
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="110mm"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sub-heading"
+        />
+
+    <EditText
+        android:id="@+id/editTextEmailAdress"
+        android:background="@drawable/edittext_bg"
+        android:drawableLeft="@drawable/call"
+        android:layout_width="350dp"
+        android:height="45dp"
+        android:layout_marginLeft="20dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_heading"
+        android:layout_marginTop="100dp"
+        android:padding="10dp"
+        android:inputType="number"
+        android:text="  Phone number" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextEmailAdress"
+        android:background="@drawable/bg_login"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:text="Continue"
+        android:onClick="goNextPage"
+
+        />
+
+    <TextView
+
+        android:id="@+id/division"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/button"
+        android:text="   _______________________   OR  _________________________">
+
+    </TextView>
+
+    <ImageButton
+        android:id="@+id/btn_2"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/google"
+        android:layout_below="@+id/division"
+
+        >
+
+    </ImageButton>
+
+    <ImageButton
+        android:id="@+id/btn_1"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/fb"
+        android:layout_below="@+id/division"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="50dp"
+        >
+
+    </ImageButton>
+
+    <ImageButton
+        android:id="@+id/btn_3"
+        android:layout_width="120dp"
+        android:src="@drawable/apple"
+        android:layout_height="120dp"
+        android:layout_below="@+id/division"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="50dp"
+        >
+
+    </ImageButton>
+
+
+    <TextView
+        android:id="@+id/editTextTextTermsandConditions"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/btn_1"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="25dp"
+        android:text="By creating an account, you accepect Stikbook Terms of service, Data policy, privacy plicy "
+        android:textColor="@color/Black"
+        android:textSize="15dp" />
+</RelativeLayout>
+
